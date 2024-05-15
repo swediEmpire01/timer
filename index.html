@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timer</title>
+    <link rel="shortcut icon" href="/imges/time-23.svg" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="timer" class="parents">
+        <div class="disply">
+            <p id="time-diply">00:00:00:00</p>
+        </div>
+        
+        <div class="buttons">
+            <input type="button" value="reset" id="reset" onclick="reset()">
+            <input type="button" value="start" id="start"onclick="start()">
+            <input type="button" value="stop" id="stop" onclick="stop()"> 
+        </div>
+    </div>
+
+    
+    <div id="clock" class="parents">
+        <div class="time-disply">
+            <div class="clock-show">
+                <p id="clock-display">00:00</p>
+                <p id="meridiem"></p>
+            </div>
+            <p id="clock-more-info-one">null</p>
+            <p id="clock-more-info-two">null</p>
+            <div id="show-contries"></div>
+
+
+
+            
+        </div>
+    </div>
+
+
+    
+    <!--do not mind these i am currently making a stop watch
+     <div id="stop-watch" class="parents">
+        <div class="disply">
+            <p id="stopHours">00</p>
+            <p class="sub">h</p>
+            <p id="stopMinutes">00</p>
+            <p class="sub">m</p>
+            <p id="stopSeconds">00</p>
+            <p class="sub">s</p>
+        </div>
+        <div class="stop-buttons">
+            <input type="button" value="1" onclick="diplayStop(1)">
+            <input type="button" value="2" onclick="diplayStop(2)">
+            <input type="button" value="3" onclick="diplayStop(3)">
+            <input type="button" value="4" onclick="diplayStop(4)">
+            <input type="button" value="5" onclick="diplayStop(5)">
+            <input type="button" value="6" onclick="diplayStop(6)">
+            <input type="button" value="7" onclick="diplayStop(7)">
+            <input type="button" value="8" onclick="diplayStop(8)">
+            <input type="button" value="9" onclick="diplayStop(9)">
+            <input type="button" value="0" onclick="diplayStop(0)">
+        </div> -->
+    <div class="pages">
+        <button type="button" onclick="next()" id="nexted">
+            Next
+        </button>
+    </div>
+
+    </div>
+
+    <script src="function.js"></script>
+</body>
+</html>
