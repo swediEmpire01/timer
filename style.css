@@ -3,7 +3,7 @@ body{
     margin: 0px;
     padding: 0px;
     height: 100%;
-    background-image: url("/imges/storm-5120x2880-lightning-5k-18686.jpg");
+    background-image: url("./imges/storm-5120x2880-lightning-5k-18686.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -122,7 +122,6 @@ input#reset:hover {
         font-size: 1.5em;
         height: 45px;
         margin: 5px;
-        color: #ffffff;
     }/*
     input#stop{
         background-color:  #184d27;
