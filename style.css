@@ -1,0 +1,219 @@
+
+body{
+    margin: 0px;
+    padding: 0px;
+    height: 100%;
+    background-image: url("/imges/storm-5120x2880-lightning-5k-18686.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #ffffff;
+    font-family: "fontOne";
+}
+
+button#nexted{
+    width: 80px ;
+    height: 80px;
+    clip-path: circle();
+    border: none;
+    color: #fff;
+    background-color: #3b184d;
+    font-size: 15px;
+    font-weight: 900;
+    font-family: "fontOne";
+    cursor: pointer;
+}
+div.pages{
+    position: fixed;
+    width: 100%;
+    display: flex;
+    bottom: 70px;
+    margin: auto;
+    align-items: center;
+}
+@media (max-width:400px) {
+    div.pages{
+        bottom: 10px;
+    }
+
+    button#nexted{
+        background-color: #184d27;
+    }
+    
+}
+
+div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    height: auto;
+    width: auto;
+}
+
+div.parents{
+    display: inline-block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 25px;
+    border-radius: 15px;
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(5px);
+    background-color: rgb(0, 0, 0, 0.1);
+    box-shadow: 1px 1px 55px rgb(155, 155, 155, 0.5);
+
+}
+
+div#timer{
+    display: none;
+}
+
+div.disply p{
+    font-size: 3em;
+    text-align: center;
+    color: #cbc8c8;
+}
+
+div.buttons input{
+    width: 150px;
+    height: 50px;
+    margin: 5px;
+    font-size: 2em;
+    border: none;
+    border-radius: 5px;
+    color: #ffffff;
+    cursor: pointer;
+    
+    
+}
+input#stop{
+    background-color:  hsl(342, 85%, 24%);
+}
+input#stop:hover{
+    background-color: hsl(0, 100%, 65%);
+}
+input#start{
+    background-color: hsl(342, 85%, 24%);
+}
+input#start:hover{
+    background-color: hsl(125, 100%, 65%);
+}
+
+input#reset{
+    background-color: hsl(342, 85%, 24%);
+}
+input#reset:hover {
+    background-color: hsl(235, 100%, 65%);
+}
+
+
+@media (max-width: 400px) {
+    body{
+        background-image: url("/photoTwo.jpg");
+    }
+    div.parent{
+        padding: 5px;
+    }
+    div.buttons input{
+        width: 100px;
+        font-size: 1.5em;
+        height: 45px;
+        margin: 5px;
+        color: #ffffff;
+    }
+    input#stop{
+        background-color:  #184d27;
+    }
+    
+    input#start{
+        background-color: #184d27;
+    }
+    
+    
+    input#reset{
+        background-color: #184d27;
+    }
+}
+
+/* this is for the time display */
+
+div.time-disply{
+    flex-direction: column;
+}
+div.time-disply p{
+    margin: 5px 0px;
+}
+div.time-disply p#clock-display{
+    font-size: 3em;
+    margin: 15px 5px;
+}
+
+div#show-contries{
+    margin: 25px 0px 0px ;
+    display: block;
+    width: 300px;
+}
+
+div#show-contries div.cities{
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid 1px #515151;
+}
+
+div#show-contries div.cities div.city-names{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+p.city-behind{
+    font-size: 12px;
+    font-weight: 500;
+    color: rgb(151, 145, 145);
+}
+
+@font-face {
+    font-family: "fontOne";
+    src: url("/fonts/condensed.ttf");
+}
+
+/* THIS IS FOR THE STOP WATCH 
+
+
+div#stop-watch{
+    display: none;
+    flex-direction: column;
+}
+div#stop-watch p.sub{
+    font-size: 14px;
+    margin: 20px 20px 0px 0px;
+}
+div.stop-buttons{
+    width: 350px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px;
+}
+
+input{
+    width: 90px;
+    height: 90px;
+    margin: 10px;
+    border: none;
+    clip-path: circle();
+    font-size: 2em;
+    color: #fff;
+    font-weight: 900;
+    background-color: rgb(0, 0, 0, 0);
+}
+input:hover{
+    background-color: rgb(0, 0, 0, 0.5);
+}
+
+*/
